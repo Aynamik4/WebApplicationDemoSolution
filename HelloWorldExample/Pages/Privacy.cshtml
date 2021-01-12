@@ -1,0 +1,27 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+<table border="1">
+    @for (int i = 1; i < 11; i++)
+    {
+        int z = i * 9;
+        int y = i * i;
+        <tr>
+            <td>@i x 9 = </td>
+            <td> @z</td>
+            <td>@i&sup2;</td>
+            <td>@y</td>
+        </tr>
+    }
+</table>
+
+@foreach (string fileName in Model.fileList)
+{
+    <img src="@fileName" alt="Girl in a jacket" width="500" height="600">
+}

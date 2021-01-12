@@ -1,0 +1,15 @@
+﻿@page
+@model HelloWorldExample.Pages.ContactModel
+@{
+}
+
+<h1>Contact</h1>
+
+<form method="post">
+    Namn: <input idName="Name" type="text" asp-for="Address.Name" />
+    Street: <input idName="Street" type="text" asp-for="Address.Street" />
+    <input id="Submit1" type="submit" value="submit" />
+</form>
+
+<h3>@Model.DataFromForm</h3>
+

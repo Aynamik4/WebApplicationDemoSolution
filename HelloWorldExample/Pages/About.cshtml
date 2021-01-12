@@ -1,0 +1,12 @@
+﻿@page
+@model HelloWorldExample.Pages.AboutModel
+@{
+}
+<a href="About?id=chefen">Chefen</a>
+<a href="About?id=personalen">Personalen</a>
+<a href="About?id=kunder">Kunderna</a>
+
+<img src="~/Images/@Model.staff.ImageUrl" width="350"/>
+<h1>@Model.staff.Header</h1>
+<p>@Model.staff.Info</p>
+<br />
