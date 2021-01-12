@@ -34,6 +34,9 @@ namespace HelloWorldExample.Pages
                     staff.Info = "The Customer";
                     break;
                 default:
+                    //staff.ImageUrl = "IMG_5093.jpg";
+                    //staff.Header = Id.ToUpper();
+                    //staff.Info = "The Boss";
                     break;
             }
         }

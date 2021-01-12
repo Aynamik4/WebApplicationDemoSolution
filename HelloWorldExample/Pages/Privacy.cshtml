@@ -6,6 +6,7 @@
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your site's privacy policy.</p>
+<h1>HÅKAN</h1>
 
 <table border="1">
     @for (int i = 1; i < 11; i++)
@@ -20,8 +21,8 @@
         </tr>
     }
 </table>
-
-@foreach (string fileName in Model.fileList)
+<br />
+@foreach (string fileName in Model.fileNames)
 {
-    <img src="@fileName" alt="Girl in a jacket" width="500" height="600">
+    <img src="~/Images/@fileName" alt="XXX" width="500" height="600">
 }

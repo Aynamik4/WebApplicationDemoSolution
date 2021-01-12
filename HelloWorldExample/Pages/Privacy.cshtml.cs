@@ -18,11 +18,12 @@ namespace HelloWorldExample.Pages
             _logger = logger;
         }
 
-        public string[] fileList;
+        public List<string> fileNames = new List<string>(16);
 
         public void OnGet()
         {
-            fileList = Directory.GetFiles("wwwroot/Images");
+            foreach (var item in Directory.EnumerateFiles("wwwroot/Images"))
+                fileNames.Add(new FileInfo(item).Name);
         }
     }
 }
